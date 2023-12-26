@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type='text/javascript' src="index.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h2>Account List</h2>
+    </div>
+
+    <div class="row">
+        <div class="column" style="background-color:#64e890;">Navigate</div>
+        <div class="column content">
+            <div id="show-accounts">
+                <div class="action-left">
+                    <button type="button" id="refresh" onclick="showAccounts()">
+                        <i class="fa fa-refresh"></i>
+                    </button>
+                    <button type="button" id="add-account" onclick="addAccount()">
+                        <i class="fa fa-plus-square"></i>
+                    </button>
+                    <button type="button" id="multi-delete">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                </div>
+                <table id="table-account">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>ID</th>
+                            <th>Username</th>
+                            <th>Full Name</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>abcxyz</td>
+                            <td>Nguyễn Văn A</td>
+                            <td>
+                                <button type="button">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                                <button type="button">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="create-account" style="display: none;" data-id="add">
+                <h3 id="title-account">Create account</h3>
+                <form>
+                    <div>
+                        <label for="username">
+                            <span>Username</span>
+                            <span style="color : red">*</span>
+                        </label>
+                        <br>
+                        <input type="text" id="username" name="username" placeholder="Input your username..." required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="fullname">
+                            <span>Full name</span>
+                            <span style="color : red">*</span>
+                        </label>
+                        <br>
+                        <input type="text" id="fullname" name="fullname" placeholder="Input your fullname..." required>
+                    </div>
+                    <br>
+                    <input type="button" value="Save" onclick="createAccount()">
+                    <input type="button" value="Cancel" onclick="showAccounts()">
+                </form>
+            </div>
+        </div>
+        <div class="column" style="background-color:#98f810;">Ads</div>
+    </div>
+</body>
+
+</html>

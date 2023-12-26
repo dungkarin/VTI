@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 600px;
+}
+
+.content {
+    width: 60%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table,
+th,
+tr,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+td {
+    text-align: center;
+}
+
+table {
+    margin: auto;
+}
+
+.action-left{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+#table-account{
+    margin-top: 10px;
+}
+
+#create-account{
+    margin-left: 100px;
+}

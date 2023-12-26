@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <p>Đây là nội dung 1</p>
+    <p id="content" class="clazz">Đây là nội dung 2</p>
+    <p class="clazz">Đây là nội dung 3</p>
+    <p>Đây là nội dung 4</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+
+    <script>
+        // $.get("https://650ee65454d18aabfe999594.mockapi.io/accounts", function (data, status) {
+        //     if (status == 'success') {
+        //         console.log(data);
+        //     } else {
+        //         console.log(status);
+        //     }
+        // })
+
+        $.ajax({
+            url: "https://650ee65454d18aabfe999594.mockapi.io/accounts",
+            type: 'GET',
+            success: function(data){
+                console.log(data);
+            },
+            error: function(xhr, status){
+                console.log(xhr, status);
+            }
+        })
+
+
+    </script>
+
+
+    <!-- <label for="nb1">Number 1: </label>
+    <input type="number" name="nb1" id="nb1"><br><br>
+    <label for="nb2">Number 2: </label>
+    <input type="number" name="nb2" id="nb2"><br><br>
+    <button id="Cộng" onclick="funCong()">Cộng</button>
+    <button id="Trừ" onclick="funTru()">Trừ</button>
+    <button id="Nhân" onclick="funNhan()">Nhân</button>
+    <button id="Chia" onclick="funChia()">Chia</button>
+
+
+    <label for="kq">Kết quả</label>
+    <input type="text" id="result" readonly> -->
+    <!-- 
+    <label for="nb">Nhập 1 số nguyên dương từ 1-50:</label><br><br>
+    <input type="text" id="nb"><br><br>
+    <button id="gt" onclick="giaithua()">Tính Giai Thừa</button><br><br>
+    <label>Kết quả:</label>
+    <input type="text" id="kq" readonly> -->
+    <!-- 
+    <script>
+
+        // function funCong() {
+        //     var number1 = document.getElementById("nb1").value;
+        //     var number2 = document.getElementById("nb2").value;
+        //     var result = Number(number1) + Number(number2);
+        //     document.getElementById("result").value = result;
+        // }
+        // function funTru() {
+        //     var number1 = document.getElementById("nb1").value;
+        //     var number2 = document.getElementById("nb2").value;
+        //     var result = Number(number1) - Number(number2);
+        //     document.getElementById("result").value = result;
+        // }
+        // function funNhan() {
+        //     var number1 = document.getElementById("nb1").value;
+        //     var number2 = document.getElementById("nb2").value;
+        //     var result = Number(number1) * Number(number2);
+        //     document.getElementById("result").value = result;
+        // }
+        // function funChia() {
+        //     var number1 = document.getElementById("nb1").value;
+        //     var number2 = document.getElementById("nb2").value;
+        //     if(number2==0){
+        //         alert("Không thể chia cho 0")
+        //         return;
+        //     }
+        //     var result = Number(number1) / Number(number2);
+        //     document.getElementById("result").value = result;
+        // }
+        function giaithua() {
+            x = document.getElementById("nb").value;
+            if (x < 1 || x > 50) {
+                alert("Nhập lại!")
+                return;
+            }
+            var n = 1;
+            for (var i = 1; i <= x; i++) {
+                n = n * i;
+            }
+            var kq = n;
+            document.getElementById("kq").value = kq;
+        }
+
+    </script> -->
+</body>
+
+</html>

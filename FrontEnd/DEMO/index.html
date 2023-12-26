@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket 37</title>
+</head>
+
+<body>
+    <h2>Register</h2>
+<div><i>Please <b>fill this form</b> to create an account</i></div>
+<br>
+<form action="/action_page.php">
+  <div>
+    <label for="fullname">
+      <span>Full name</span>
+      <span style="color : red">*</span>
+    </label>
+    <br>
+    <input type="text" id="fullname" name="fullname" placeholder="Input your fullname..." required>
+  </div>
+  <br>
+  <div>
+    <label for="username">
+      <span>Username</span>
+      <span style="color : red">*</span>
+    </label>
+    <br>
+    <input type="text" id="username" name="username" placeholder="Input your username..." required>
+  </div>
+  <br>
+  <div>
+    <label for="password">
+      <span>Password</span>
+      <span style="color : red">*</span>
+    </label>
+    <br>
+    <input type="password" id="password" name="password" placeholder="Input your password..." required>
+  </div>
+  <br>
+  <div>
+    <label for="email">
+      <span>Email</span>
+      <span style="color : red">*</span>
+    </label>
+    <br>
+    <input type="email" id="email" name="email" placeholder="Input your email..." required>
+  </div>
+  <br>
+  <div>
+    <label for="phone">
+      <span>Telephone number</span>
+      <span style="color : red">*</span>
+    </label>
+    <br>
+    <input type="text" id="phone" name="phone" placeholder="Input your phone number..." required>
+  </div>
+  <br>
+  <div>Input Object:</div>
+  <input type="radio" id="student" name="init_object" value = "student">
+  <label for="student">Student</label>
+  <input type="radio" id="teacher" name="init_object" value = "teacher">
+  <label for="teacher">Teacher</label>
+  <br><br>
+  <div>Favorite:</div>
+  <input type="checkbox" id="badminton" name="favorite" value="badminton">
+  <label for="badminton">Badminton</label>
+  <input type="checkbox" id="volleyball" name="favorite" value="volleyball">
+  <label for="volleyball">Volleyball</label>
+  <input type="checkbox" id="football" name="favorite" value="football">
+  <label for="football">Football</label>
+  <br><br>
+  <div>
+    <span>Address</span>
+    <span style="color : red">*</span>
+  </div>
+  <select name="address">
+    <option value="bacgiang">Bắc Giang</option>
+    <option value="hanoi">Hà Nội</option>
+    <option value="hanam">Hà Nam</option>
+  </select>
+  <br><br>
+  <div>
+    <span>Birthday</span>
+    <span style="color : red">*</span>
+  </div>
+  <input type="date" name = "birthday">
+  <br><br>
+  <div>
+    <span>Your picture</span>
+    <span style="color : red">*</span>
+  </div>
+  <input type="file" name = "uploadfile">
+  <br><br>
+  <input type="submit" value="Đăng ký">
+</form>
+<br><br>
+</body>
+
+</html>
